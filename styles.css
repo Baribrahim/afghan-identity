@@ -191,6 +191,7 @@ body {
     position: relative;
     padding: 2rem;
     animation: fadeInUp 1s ease;
+    margin: 0 auto;
 }
 
 .hero-main {
@@ -199,10 +200,20 @@ body {
     gap: 3rem;
     align-items: center;
     margin-bottom: 3rem;
+    width: 100%;
+}
+
+@media (min-width: 769px) {
+    .hero-main {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    }
 }
 
 .hero-text {
     text-align: left;
+    width: 100%;
+    min-width: 0;
 }
 
 .hero-image {
@@ -210,6 +221,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    min-width: 0;
 }
 
 .map-container {
@@ -669,6 +682,13 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 968px) {
+    .hero-main {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         width: 100%;
