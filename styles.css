@@ -760,6 +760,10 @@ body {
     box-shadow: var(--shadow);
 }
 
+.map-container iframe {
+    height: 400px;
+}
+
 /* Responsive Design */
 @media (max-width: 968px) {
     .hero-main {
