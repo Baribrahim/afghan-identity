@@ -594,6 +594,21 @@ body {
     font-size: 1.2rem;
 }
 
+.preservation-icon {
+    font-size: 2.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    display: block;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.preservation-item:hover .preservation-icon {
+    opacity: 1;
+    transform: scale(1.1);
+    color: var(--accent-color);
+}
+
 /* Footer */
 .footer {
     background: var(--primary-color);
