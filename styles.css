@@ -609,6 +609,38 @@ body {
     color: var(--accent-color);
 }
 
+.proverbs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.proverb-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+    background: var(--bg-light);
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.proverb-english {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.proverb-dari {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin: 0;
+    text-align: right;
+    direction: rtl;
+    font-weight: 500;
+}
+
 /* Footer */
 .footer {
     background: var(--primary-color);
